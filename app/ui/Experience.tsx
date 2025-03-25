@@ -32,7 +32,7 @@ const Experience = () => {
                 <ul className="list-disc pl-4">
                     <li className="leading-relaxed ">Led the seamless integration of an interbank payment system, leveraging REST APIs with ISO 20022
                         messages and mutual authentication (MTLS).</li>
-                    <li className="leading-relaxed ">Championed the integration of an Identity and Access Management solution into the organization's REST-based
+                    <li className="leading-relaxed ">Championed the integration of an Identity and Access Management solution into the organization&apos;s REST-based
                         microservices, fortifying security measures and ensuring controlled access.</li>
                     <li className="leading-relaxed ">Executed complex tax payment integrations, facilitating seamless transactions between organizations,
                         individuals, and the Kenya Revenue Authority through the banking infrastructure.</li>

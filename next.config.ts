@@ -11,8 +11,8 @@ const nextConfig = {
   images: {
     unoptimized: true, // Avoids Image Optimization issues on GitHub Pages
   },
-  basePath: "nextportfolio", // Change this to your repo name
-  assetPrefix: "nextportfolio",
+  basePath: "/nextportfolio", // Change this to your repo name
+  assetPrefix: "/nextportfolio",
 };
 
 module.exports = nextConfig;
