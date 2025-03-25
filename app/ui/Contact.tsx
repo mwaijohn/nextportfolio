@@ -3,8 +3,8 @@ import React from 'react'
 
 const Contact = () => {
     return (
-        <div id='contacts' className='flex justify-between'>
-            <div className='contact-form w-1/2 p-4'>
+        <div id='contacts' className='flex sm:flex-row flex-col justify-between'>
+            <div className='contact-form sm:w-1/2 p-4'>
                 <p className='text-2xl font-bold mb-4 text-[#008000]'>REACH OUT</p>
                 <div className="">
                     <form action="#" method="POST" className="space-y-6 w-full">
@@ -37,7 +37,7 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
-            <div className='socials w-1/2 p-4'>
+            <div className='socials sm:w-1/2 p-4'>
                 <p className='text-2xl font-bold mb-4 text-[#008000]'>CONNECT ON SOCIALS</p>
                 <p className='mb-4 text-base'>Lets connect on the socials</p>
                 <div id='socials' className='flex flex-col space-y-4'>

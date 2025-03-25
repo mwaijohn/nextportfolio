@@ -5,7 +5,7 @@ import Hero from "./ui/Hero";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="sm:px-64 px-4">
       <Hero />
       <Experience />
       <Contact />
