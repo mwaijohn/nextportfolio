@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "deploy": "next build && gh-pages -d .next"
+    "deploy": "gh-pages -d .next -b gh-pages -f"
   },
   "dependencies": {
     "next": "15.2.4",
