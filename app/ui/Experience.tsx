@@ -1,67 +1,79 @@
+
+const experiences = [
+    {
+        title: "Lead Analyst Digital Transformation",
+        company: "Africa Banking Corporation",
+        location: "Nairobi, Nairobi County",
+        duration: "07/2024 - Present",
+        responsibilities: [
+            "Built a digital wallet with multiple payment channels.",
+            "Led key feature development with a cross-functional team.",
+            "Integrated blockchain for security and efficiency."
+        ]
+    },
+    {
+        title: "Senior Software Developer",
+        company: "Africa Banking Corporation",
+        location: "Nairobi, Nairobi County",
+        duration: "07/2023 - 06/2024",
+        responsibilities: [
+            "Built a digital wallet with multiple payment channels.",
+            "Led key feature development with a cross-functional team.",
+            "Integrated blockchain for security and efficiency."
+        ]
+    },
+    {
+        title: "Software Developer",
+        company: "Africa Banking Corporation",
+        location: "Nairobi, Nairobi County",
+        duration: "04/2022 - 07/2023",
+        responsibilities: [
+            "Led the seamless integration of an interbank payment system, leveraging REST APIs with ISO 20022 messages and mutual authentication (MTLS).",
+            "Championed the integration of an Identity and Access Management solution into the organization’s REST-based microservices, fortifying security measures and ensuring controlled access.",
+            "Executed complex tax payment integrations, facilitating seamless transactions between organizations, individuals, and the Kenya Revenue Authority through the banking infrastructure.",
+            "Played a pivotal role in the maintenance and upgrade of legacy projects, executing successful migrations to scalable and maintainable Docker containerized microservices-oriented development.",
+            "Expertly utilized a tech stack comprising Java, JavaScript, Spring Boot, Postgres Database, Tailwind CSS, and React.js, demonstrating versatility and proficiency across various technologies.",
+            "Effectively employed RabbitMQ, Kafka, Git, microservices architecture, Docker, Jenkins, and GitLab to streamline development and ensure efficient delivery of projects.",
+            "Implemented cutting-edge cryptographic protocols, including MTLS and SSL, to enhance security measures, safeguarding critical systems and data."
+        ]
+    },
+    {
+        title: "Software Developer",
+        company: "Digisoft Solutions Limited",
+        location: "Nairobi, Nairobi County",
+        duration: "09/2020 - 12/2021",
+        responsibilities: [
+            "Led ERP solution development, driving requirement gathering and successful deployment.",
+            "Ensured system enhancement, maintenance, and smooth integration.",
+            "Provided expert ERP support, resolving issues and maintaining performance.",
+            "Developed enterprise mobile apps, boosting business functionality via mobile tech.",
+            "Deployed scalable web services on AWS, optimizing resource utilization."
+        ]
+    }
+];
+
 const Experience = () => {
     return (
         <div id="experience" className="p-12">
-            <p className="text-2xl font-bold mb-4 text-[#008000]">EXPERIENCE</p>
-
-            <div className="mb-8">
-                <p className="text-lg font-bold mb-1">Lead Analyst Digital Transformation - </p>
-                <p className="text-lg italic mb-1">Africa Banking Corporation • Nairobi, Nairobi County</p>
-                <p className="text-base leading-relaxed mb-4">07/2024 - Present</p>
-                <ul className="list-disc pl-4">
-                    <li className="leading-relaxed ">Built a digital wallet with multiple payment channels.</li>
-                    <li className="leading-relaxed ">Led key feature development with a cross-functional team.</li>
-                    <li className="leading-relaxed ">Integrated blockchain for security and efficiency.</li>
-                </ul>
+            <p className="text-2xl font-bold mb-6 text-green-600">EXPERIENCE</p>
+            <div className="grid md:grid-cols-2 gap-6">
+                {experiences.map((exp, index) => (
+                    <div key={index} className="bg-white shadow-lg rounded-2xl p-6">
+                        <div className="mb-4">
+                            <h3 className="text-lg font-bold">{exp.title}</h3>
+                            <p className="text-md italic text-gray-600">{exp.company} • {exp.location}</p>
+                            <p className="text-sm text-gray-500">{exp.duration}</p>
+                        </div>
+                        <ul className="list-disc pl-4 text-sm text-gray-700">
+                            {exp.responsibilities.map((item, idx) => (
+                                <li key={idx} className="leading-relaxed">{item}</li>
+                            ))}
+                        </ul>
+                    </div>
+                ))}
             </div>
-
-            <div className="mb-8">
-                <p className="text-lg font-bold mb-1">Senior Software Developer - </p>
-                <p className="text-lg italic mb-1">Africa Banking Corporation • Nairobi, Nairobi County</p>
-                <p className="text-base leading-relaxed mb-4">07/2023 - 06/2024</p>
-                <ul className="list-disc pl-4">
-                    <li className="leading-relaxed ">Built a digital wallet with multiple payment channels.</li>
-                    <li className="leading-relaxed ">Led key feature development with a cross-functional team.</li>
-                    <li className="leading-relaxed ">Integrated blockchain for security and efficiency.</li>
-                </ul>
-            </div>
-
-            <div className="mb-4">
-                <p className="text-lg font-bold mb-1">Software Developer - </p>
-                <p className="text-lg italic mb-1">Africa Banking Corporation • Nairobi, Nairobi County</p>
-                <p className="text-base leading-relaxed mb-4">04/2022 - 07/2023</p>
-                <ul className="list-disc pl-4">
-                    <li className="leading-relaxed ">Led the seamless integration of an interbank payment system, leveraging REST APIs with ISO 20022
-                        messages and mutual authentication (MTLS).</li>
-                    <li className="leading-relaxed ">Championed the integration of an Identity and Access Management solution into the organization&apos;s REST-based
-                        microservices, fortifying security measures and ensuring controlled access.</li>
-                    <li className="leading-relaxed ">Executed complex tax payment integrations, facilitating seamless transactions between organizations,
-                        individuals, and the Kenya Revenue Authority through the banking infrastructure.</li>
-                    <li className="leading-relaxed ">Played a pivotal role in the maintenance and upgrade of legacy projects, executing successful migrations to scalable
-                        and maintainable Docker containerized microservices-oriented development.</li>
-                    <li className="leading-relaxed ">Expertly utilized a tech stack comprising Java, JavaScript, Spring Boot, Postgres Database, Tailwind CSS, and React.js,
-                        demonstrating versatility and proficiency across various technologies.</li>
-                    <li className="leading-relaxed ">Effectively employed RabbitMQ, Kafka,Git, microservices architecture, Docker, Jenkins,
-                        and GitLab to streamline development and ensure efficient delivery of projects.</li>
-                    <li className="leading-relaxed ">Implemented cutting-edge cryptographic protocols, including MTLS and SSL,
-                        to enhance security measures, safeguarding critical systems and data.</li>
-                </ul>
-            </div>
-            <div className="mb-8">
-                <p className="text-lg font-bold mb-1">Software Developer - </p>
-                <p className="text-lg italic mb-1">Digisoft Solutions Limited • Nairobi, Nairobi County</p>
-                <p className="text-base leading-relaxed mb-4">09/2020 - 12/2021</p>
-                <ul className="list-disc pl-4">
-                    <li className="leading-relaxed ">Led ERP solution development, driving requirement gathering and successful deployment.  </li>
-                    <li className="leading-relaxed ">Ensured system enhancement, maintenance, and smooth integration. </li>
-                    <li className="leading-relaxed ">Provided expert ERP support, resolving issues and maintaining performance.</li>
-                    <li className="leading-relaxed ">Developed enterprise mobile apps, boosting business functionality via mobile tech.</li>
-                    <li className="leading-relaxed ">Deployed scalable web services on AWS, optimizing resource utilization.</li>
-
-                </ul>
-            </div>
-
         </div>
-    )
-}
+    );
+};
 
-export default Experience
+export default Experience;
