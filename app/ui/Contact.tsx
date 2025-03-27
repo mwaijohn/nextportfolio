@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 const Contact = () => {
     return (
         <div id='contacts' className='w-full'>
