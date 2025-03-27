@@ -29,7 +29,7 @@ const Hero = () => {
                     Passionate about technical writing and continuous learning.
                 </p>
 
-                <div className='flex mt-4 space-x-4'>
+                <div className='flex mt-4 space-x-4 text-center'>
 
                     {[
                         { name: '@HelloMwai', link: 'https://x.com/HelloMwai', icon: '/svg/x.svg' },
