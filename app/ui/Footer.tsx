@@ -2,9 +2,11 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div className='flex justify-center p-4 text-gray h-12 pb-12'>
-            <p className='text-base font-bold'>Made with NextJs.  &copy; {new Date().getFullYear()}.</p>
-        </div>
+        <footer className='flex justify-center items-center p-4 text-gray-700 h-12 pb-12' aria-label="Footer">
+            <p className='text-base font-bold text-center'>
+                Made with Next.js &copy; {new Date().getFullYear()}.
+            </p>
+        </footer>
     )
 }
 

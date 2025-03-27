@@ -1,4 +1,3 @@
-
 const experiences = [
     {
         title: "Lead Analyst Digital Transformation",
@@ -54,17 +53,18 @@ const experiences = [
 
 const Experience = () => {
     return (
-        <div id="experience" className="p-12">
-            <p className="text-2xl font-bold mb-6 text-green-600">EXPERIENCE</p>
-            <div className="grid md:grid-cols-2 gap-6">
+        <div id="experience" className="px-6 md:px-16 py-12">
+            <p className="text-3xl font-extrabold text-green-600 mb-8">EXPERIENCE</p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {experiences.map((exp, index) => (
-                    <div key={index} className="bg-white shadow-lg rounded-2xl p-6">
+                    <div key={index} className="bg-white shadow-xl rounded-2xl p-6 transition-transform duration-300 hover:scale-[1.02]">
                         <div className="mb-4">
-                            <h3 className="text-lg font-bold">{exp.title}</h3>
+                            <h3 className="text-xl font-semibold text-gray-800">{exp.title}</h3>
                             <p className="text-md italic text-gray-600">{exp.company} • {exp.location}</p>
                             <p className="text-sm text-gray-500">{exp.duration}</p>
                         </div>
-                        <ul className="list-disc pl-4 text-sm text-gray-700">
+                        <ul className="list-disc pl-5 text-gray-700 text-[15px] space-y-2">
                             {exp.responsibilities.map((item, idx) => (
                                 <li key={idx} className="leading-relaxed">{item}</li>
                             ))}
