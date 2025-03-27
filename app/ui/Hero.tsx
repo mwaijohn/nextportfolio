@@ -6,9 +6,9 @@ const Hero = () => {
             {/* Profile Image */}
             <div className="w-full sm:w-1/3 flex justify-center">
                 <Image
-                    src="/profile.jpg"
-                    width={350}
-                    height={350}
+                    src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    width={500}
+                    height={500}
                     alt="Picture of the author"
                     className="rounded-lg shadow-lg"
                 />
