@@ -1,8 +1,9 @@
 import Image from "next/image"
+import Link from "next/link"
 
 const Hero = () => {
     return (
-        <div className="flex flex-col sm:flex-row items-center px-6 md:px-16 py-12">
+        <div className="flex flex-col lg:flex-row items-center px-6 md:px-16 py-12">
             {/* Profile Image */}
             <div className="w-full sm:w-1/3 flex justify-center">
                 <Image
@@ -20,13 +21,28 @@ const Hero = () => {
                     HI, I&apos;M <span className="text-green-600">JOHN MWAI</span>
                 </p>
                 <p className="text-lg md:text-xl leading-relaxed text-gray-700 mb-4">
-                    Experienced software developer based in Nairobi with expertise in Java, Kotlin, 
-                    JavaScript, PHP, Spring Boot, and full-stack development. Skilled in mobile (Android), 
+                    Experienced software developer based in Nairobi with expertise in Java, Kotlin,
+                    JavaScript, PHP, Spring Boot, and full-stack development. Skilled in mobile (Android),
                     web (ReactJS, VueJS), and backend technologies, with experience in CI/CD, Docker, and Git.
                 </p>
                 <p className="text-lg md:text-xl text-gray-600">
                     Passionate about technical writing and continuous learning.
                 </p>
+
+                <div className='flex mt-4 space-x-4'>
+
+                    {[
+                        { name: '@HelloMwai', link: 'https://x.com/HelloMwai', icon: '/svg/x.svg' },
+                        { name: 'mwaijohn', link: 'https://www.linkedin.com/in/mwaijohn/', icon: '/svg/linkedin.svg' },
+                        { name: 'mwaijohn', link: 'https://github.com/mwaijohn', icon: '/svg/github.svg' },
+                    ].map((social, index) => (
+                        <Link href={social.link} key={index} className='text-lg font-medium text-gray-900 hover:text-green-700' target='blank'>
+                            <img src={social.icon} alt={social.name} className="w-8 h-8" />
+                        </Link>
+                    ))
+                    }
+                </div>
+
             </div>
         </div>
     )
