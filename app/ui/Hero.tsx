@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
+
 const Hero = () => {
     return (
         <div className="flex flex-col lg:flex-row items-center px-6 md:px-16 py-12">
