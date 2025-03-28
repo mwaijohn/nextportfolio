@@ -1,4 +1,3 @@
-'use server'
 import { Award, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
 
