@@ -38,7 +38,14 @@ const Hero = () => {
                         { name: 'mwaijohn', link: 'https://github.com/mwaijohn', icon: '/svg/github.svg' },
                     ].map((social, index) => (
                         <Link href={social.link} key={index} className='text-lg font-medium text-gray-900 hover:text-green-700' target='blank'>
-                            <img src={social.icon} alt={social.name} className="w-8 h-8" />
+                            {/* <img src={social.icon} alt={social.name} className="w-8 h-8" />
+                             */}
+                            <Image
+                                src={social.icon}
+                                alt={social.name}
+                                width={24}
+                                height={24}
+                            />
                         </Link>
                     ))
                     }

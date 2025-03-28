@@ -24,7 +24,6 @@ const nextConfig: NextConfig = {
   },
   basePath: "/nextportfolio", // Change this to your repo name
   assetPrefix: "/nextportfolio",
-
 };
 
 
