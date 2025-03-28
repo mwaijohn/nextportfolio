@@ -6,7 +6,7 @@ const Header = () => {
             <Link href="#home" className="hover:text-green-600 transition">Home</Link>
             <Link href="#experience" className="hover:text-green-600 transition">Experience</Link>
             <Link href="#contacts" className="hover:text-green-600 transition">Contacts</Link>
-            <Link href="#projects" className="hover:text-green-600 transition">Project</Link>
+            <Link href="#certifications" className="hover:text-green-600 transition">Certifications</Link>
         </nav>
     )
 }
