@@ -32,7 +32,7 @@ const experiences = [
 const Experience = () => {
     return (
         <div id="experience" className="px-6 md:px-16 py-12">
-            <p className="text-3xl font-extrabold text-green-600 mb-8">EXPERIENCE</p>
+            <p className="text-4xl font-extrabold text-green-600 mb-8">EXPERIENCE</p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {experiences.map((exp, index) => (
