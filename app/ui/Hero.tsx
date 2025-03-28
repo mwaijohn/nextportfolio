@@ -46,6 +46,7 @@ const Hero = () => {
                                 width={24}
                                 height={24}
                             />
+                            yeah
                         </Link>
                     ))
                     }
